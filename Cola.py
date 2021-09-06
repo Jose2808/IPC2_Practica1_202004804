@@ -21,12 +21,12 @@ class Cola:
                 print(puntero.ingrediente)
                 puntero = puntero.siguiente
         else:
-            print("Cola vacía - No hay ordenes en curso para mostrar")
+            print("Cola vacía - No hay ordenes en curso para mostrar\n")
 
     def entregarOrden(self):
         if self.inicio is not None:
             aux = self.inicio
             self.inicio = self.inicio.siguiente
-            print("Entregando la orden de:" + aux.ingrediente)
+            print("Entregando orden de pizza de:" + aux.ingrediente)
         else:
-            print("Cola vacía - Totalidad de órdenes entregadas")
+            print("Cola vacía - Totalidad de órdenes entregadas\n")

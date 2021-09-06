@@ -6,13 +6,14 @@ def menuPrincipal():
     print("***********************************")
     print("|         1.Ingresar Orden        |")
     print("|         2.Entregar Orden        |")
-    print("|        3.MostrarOrdenes Orden   |")
+    print("|         3.MostrarOrdenes        |")
     print("|  4.Mostrar datos del estudiante |")
     print("|             5.Salir             |")
     print("***********************************")
     respuesta = input("Ingrese el número de opción que desea realizar\n")
 
     if int(respuesta) == 1:
+        print("Creando nueva orden")
         print("Ingrese el ingrediente a agregarse a la pizza")
         ordenes.agregarOrden(input())
     elif int(respuesta) == 2:
